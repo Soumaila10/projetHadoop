@@ -1,0 +1,28 @@
+*.jar
+*.class
+build/
+build_oulad/
+*.zip
+*.tar.gz
+input_splits/
+data/
+# Data files
+*.csv
+transactions.txt
+common_words_en_subset.txt
+# Allow specific small data files if needed, but generally ignore large inputs
+!vle.csv
+# But vle.csv matches the pattern. actually vle.csv is part of the dataset.
+# The user instruction was "Telechargez les donnees".
+# Best practice: Do NOT commit data.
+# The user wants "Code source, Commandes, Resultats".
+# So:
+# Ignore input data
+student*.csv
+vle.csv
+courses.csv
+assessments.csv
+# Ignore temp dirs
+input_oulad_splits/
+# Keep Resultats_Finaux
+!Resultats_Finaux/
